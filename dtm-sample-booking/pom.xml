@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dtm-sample</artifactId>
+        <groupId>com.huawei.dtm</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dtm-sample-booking</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>dtm-sample-booking-api</module>
+        <module>dtm-sample-booking-plane</module>
+        <module>dtm-sample-booking-hotel</module>
+        <module>dtm-sample-booking-booking</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Third Party Dependencies -->
+            <dependency>
+                <groupId>org.apache.servicecomb</groupId>
+                <artifactId>metrics-core</artifactId>
+                <version>1.2.0.B006</version>
+            </dependency>
+
+            <!-- This Project Dependencies -->
+            <dependency>
+                <groupId>com.huawei.dtm</groupId>
+                <artifactId>dtm-sample-booking-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huawei.dtm</groupId>
+                <artifactId>dtm-sample-booking-booking</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huawei.dtm</groupId>
+                <artifactId>dtm-sample-booking-hotel</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huawei.dtm</groupId>
+                <artifactId>dtm-sample-booking-plane</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

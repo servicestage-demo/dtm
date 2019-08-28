@@ -11,19 +11,15 @@
 
     <artifactId>dtm-booking-plane</artifactId>
 
-
     <dependencies>
         <dependency>
             <groupId>com.huawei.dtm</groupId>
-            <artifactId>dtm-booking-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>dtm-sample-booking-api</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.huawei.paas.dtm</groupId>
             <artifactId>dtm-client-servicecomb</artifactId>
         </dependency>
     </dependencies>
-
 
 </project>

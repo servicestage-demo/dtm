@@ -9,7 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dtm-booking-api</artifactId>
+    <artifactId>dtm-sample-booking-hotel</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.huawei.dtm</groupId>
+            <artifactId>dtm-sample-booking-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.huawei.paas.dtm</groupId>
+            <artifactId>dtm-client-servicecomb</artifactId>
+        </dependency>
+    </dependencies>
 </project>

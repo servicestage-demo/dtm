@@ -7,23 +7,29 @@
     <groupId>com.huawei.dtm</groupId>
     <artifactId>dtm-sample</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
-        <module>dtm-booking</module>
+        <module>dtm-sample-booking</module>
     </modules>
 
     <packaging>pom</packaging>
 
-
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>com.huawei.paas.cse</groupId>
+                <artifactId>cse-dependency</artifactId>
+                <version>2.3.69</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>com.huawei.paas.dtm</groupId>
                 <artifactId>dtm-client-servicecomb</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
     <repositories>
         <repository>
@@ -31,6 +37,5 @@
             <url>https://mirrors.huaweicloud.com/repository/maven/</url>
         </repository>
     </repositories>
-
 
 </project>

@@ -1,0 +1,33 @@
+APPLICATION_ID: booking
+service_description:
+  name: plane
+  version: 0.0.1
+cse:
+  service:
+    registry:
+      address: https://cse.cn-south-1.myhuaweicloud.com:30100
+      instance:
+        watch: false
+  config:
+    client:
+      serverUri: https://cse.cn-south-1.myhuaweicloud.com:30103
+      refreshMode: 1
+      refresh_interval: 5000
+      handler:
+        chain:
+          Provider:
+            default: dtm-provider-handler
+  rest:
+    address: 0.0.0.0:9997
+  credentials:
+    accessKey: AK  #根据用户自己的 AK 进行配置
+    secretKey: SK  #根据用户自己的 SK 进行配置
+    project: cn-south-1
+    akskCustomCipher: default
+
+dtm:
+  appName: booking
+  rpc:
+    sslEnabled: true
+  proxy:
+    endpoint: proxy endpoint #根据用户自己的 dtm 引擎 proxy endpoint 进行配置

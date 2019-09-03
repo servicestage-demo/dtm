@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dtm-booking-plane</artifactId>
+    <artifactId>dtm-sample-booking-plane</artifactId>
 
     <dependencies>
         <dependency>

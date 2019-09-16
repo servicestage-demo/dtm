@@ -19,13 +19,17 @@
         <module>dtm-sample-booking-booking</module>
     </modules>
 
+    <properties>
+        <servicecomb.version>1.2.0.B006</servicecomb.version>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <!-- Third Party Dependencies -->
             <dependency>
                 <groupId>org.apache.servicecomb</groupId>
                 <artifactId>metrics-core</artifactId>
-                <version>1.2.0.B006</version>
+                <version>${servicecomb.version}</version>
             </dependency>
 
             <!-- This Project Dependencies -->

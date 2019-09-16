@@ -16,7 +16,7 @@
 
     <properties>
         <cse-dependency.version>2.3.69</cse-dependency.version>
-        <dtm.version>1.0.1</dtm.version>
+        <dtm.version>1.0.2</dtm.version>
     </properties>
 
     <dependencyManagement>

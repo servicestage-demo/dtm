@@ -1,16 +1,17 @@
 APPLICATION_ID: booking
 service_description:
   name: hotel
-  version: 0.0.1
+  environment: development
+
 cse:
   service:
     registry:
-      address: https://cse.cn-south-1.myhuaweicloud.com:30100
+      address: https://cse.cn-north-4.myhuaweicloud.com
       instance:
         watch: false
   config:
     client:
-      serverUri: https://cse.cn-south-1.myhuaweicloud.com:30103
+      serverUri: https://cse.cn-north-4.myhuaweicloud.com
       refreshMode: 1
       refresh_interval: 5000
       handler:
@@ -22,7 +23,7 @@ cse:
   credentials:
     accessKey: AK  #根据用户自己的 AK 进行配置
     secretKey: SK  #根据用户自己的 SK 进行配置
-    project: cn-south-1
+    project: cn-north-4
     akskCustomCipher: default
 
 dtm:

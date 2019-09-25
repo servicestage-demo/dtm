@@ -21,8 +21,12 @@
             <artifactId>dtm-client-servicecomb</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.apache.servicecomb</groupId>
+            <artifactId>service-registry</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.huawei.paas.cse</groupId>
-            <artifactId>cse-solution-service-engine</artifactId>
+            <artifactId>foundation-auth</artifactId>
         </dependency>
     </dependencies>
 

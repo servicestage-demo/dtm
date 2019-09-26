@@ -14,10 +14,10 @@ cse:
       serverUri: https://cse.cn-north-4.myhuaweicloud.com
       refreshMode: 1
       refresh_interval: 5000
-      handler:
-        chain:
-          Provider:
-            default: dtm-provider-handler
+  handler:
+    chain:
+      Provider:
+        default: dtm-provider-handler
   rest:
     address: 0.0.0.0:9997
   credentials:
